@@ -1,0 +1,30 @@
+{
+  "name": "surftime-composer/surftime-cms",
+  "description": "Project template for surftime projects with composer",
+  "license": "GPL-3.0+",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Alexander Weigelt",
+      "email": "webdesign@alexander-weigelt.de"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/alexanderweigelt/Surftime.git"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "mnsami/composer-custom-directory-installer": "1.1.*",
+    "surftime/cms": "dev-release-3.1.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "./{$vendor}": ["surftime/cms"]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
